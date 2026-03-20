@@ -46,4 +46,3 @@ with sync_playwright() as playwright:
     expect(courses_description_text).to_be_enabled()
     expect(courses_description_text).to_have_text('Results from the load test pipeline will be displayed here')
     
-    # page.wait_for_timeout(5000)
