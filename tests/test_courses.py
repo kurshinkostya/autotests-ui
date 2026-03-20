@@ -33,7 +33,7 @@ def test_empty_courses_list():
         page.goto('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses')
     
         courses_toolbar_title = page.get_by_test_id('courses-list-toolbar-title-text')
-        expect(courses_toolbar_title).to_be_enabled()
+        expect(courses_toolbar_title).to_be_visible()
         expect(courses_toolbar_title).to_have_text('Courses')
     
         courses_list_empty_icon = page.get_by_test_id('courses-list-empty-view-icon')
