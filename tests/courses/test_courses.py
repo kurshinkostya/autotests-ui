@@ -70,7 +70,7 @@ class TestCourses:
             "description": "Playwright course description",
             "max_score": "100",
             "min_score": "10"
-    }
+        }
 
         create_course_page.image_upload_widget.upload_preview_image("./testdata/files/image.png")
         create_course_page.form.fill(**create_data)
@@ -85,7 +85,7 @@ class TestCourses:
             max_score=create_data["max_score"],
             min_score=create_data["min_score"],
             estimated_time=create_data["estimated_time"]
-    )
+        )
 
         courses_list_page.course_view.menu.click_edit(index=0)
 
@@ -107,5 +107,5 @@ class TestCourses:
             max_score=updated_data["max_score"],
             min_score=updated_data["min_score"],
             estimated_time=updated_data["estimated_time"]
-    )
+        )
     
