@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class AllureStory(str, Enum):
-    COURSES = 'COURSES'
-    DASHBOARD = 'DASHBOARD'
-    REGISTRATION = 'REGISTRATION'
-    AUTHORIZATION = 'AUTHORIZATION'
+    COURSES = 'Courses'
+    DASHBOARD = 'Dashboard'
+    REGISTRATION = 'Registration'
+    AUTHORIZATION = 'Authorization'
